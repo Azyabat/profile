@@ -1,0 +1,61 @@
+.todo-list {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15px;
+
+  .caption {
+    display: inline-block;
+    width: 400px;
+    margin-right: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 28px;
+    line-height: 28px;
+  }
+
+  .icons-container {
+    display: inline-flex;
+    width: 45px;
+    justify-content: space-between;
+    position: relative;
+    bottom: 5px;
+  }
+
+  .icon__remove {
+    cursor: pointer;
+    &:hover {
+      color: red;
+    }
+  }
+
+  .icon__complete {
+    cursor: pointer;
+    &:hover {
+      color: green;
+    }
+  }
+}
+
+.todo-list__input {
+  min-width: 475px;
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+%todo-list__card {
+  margin-bottom: 4px;
+  width: 480px;
+  display: flex;
+}
+
+.todo-list__process-card {
+  @extend %todo-list__card;
+  background-color: aliceblue;
+}
+
+.todo-list__completed-card {
+  @extend %todo-list__card;
+  background-color: palegreen;
+}

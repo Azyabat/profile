@@ -1,0 +1,51 @@
+@import "~antd/dist/antd.css";
+@import "./headerMenu.scss";
+@import "./startPage.scss";
+@import "./todoList.scss";
+
+.fw_fh {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-width: 500px;
+  background-color: whitesmoke;
+  overflow-y: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+#root {
+  width: 65%;
+  height: 100%;
+  margin: 0 auto;
+  border: 1px solid gainsboro;
+  border-top: none;
+  min-width: 500px;
+  background-color: white;
+}
+
+.ant-card-body {
+  padding: 10px 12px !important;
+}
+
+.error-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-container__description-item {
+  font-size: 48px;
+}

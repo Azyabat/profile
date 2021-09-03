@@ -1,0 +1,99 @@
+{
+  "folders": [
+    {
+      "name": "Корень проекта",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "files.encoding": "utf8",
+    "files.autoSave": "onWindowChange",
+    "todohighlight.isEnable": true,
+    "todohighlight.isCaseSensitive": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "todohighlight.keywords": [
+      {
+        "text": "todo:",
+        "color": "red"
+      },
+      {
+        "text": "fixme:",
+        "color": "red",
+        "borderRadius": "3px",
+        "border": "1px solid red",
+        "backgroundColor": "#000"
+      }
+    ],
+    "todohighlight.exclude": [
+      "**/node_modules/**",
+      "**/bower_components/**",
+      "**/dist/**",
+      "**/build/**",
+      "**/.vscode/**",
+      "**/.github/**",
+      "**/_output/**",
+      "**/*.min.*",
+      "**/*.map",
+      "**/.next/**"
+    ],
+    "breadcrumbs.enabled": true,
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "typescript.enablePromptUseWorkspaceTsdk": true,
+    "javascript.format.enable": false,
+    "typescript.format.enable": false,
+    "editor.formatOnSave": true,
+    "[handlebars]": { "editor.formatOnSave": false },
+    "editor.rulers": [100],
+    "workbench.activityBar.visible": true,
+    "editor.tabSize": 2,
+    "workbench.editor.tabSizing": "shrink",
+    "workbench.editor.limit.enabled": true,
+    "files.eol": "\n",
+    "workbench.editor.enablePreview": false,
+    "files.watcherExclude": {
+      "/**/.git/**": true,
+      "/**/node_modules/**": true,
+      "/**/_release/**": true
+    },
+    "git.enableSmartCommit": true,
+    "git.promptToSaveFilesBeforeCommit": true,
+    "git.showPushSuccessNotification": true,
+    "git.detectSubmodulesLimit": 100,
+    "typescript.surveys.enabled": false,
+    "cSpell.language": "en,ru",
+    "telemetry.enableTelemetry": false,
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/bower_components": true,
+      "**/*.code-search": true,
+      "**/*CHANGELOG.md": true
+    },
+    "importer.view.addingPrefixPath": "@im/"
+  },
+  "extensions": {
+    "recommendations": [
+      "stevencl.adddoccomments",
+      "formulahendry.auto-close-tag",
+      "formulahendry.auto-rename-tag",
+      "coenraads.bracket-pair-colorizer",
+      "wmaurer.change-case",
+      "vikas.code-navigation",
+      "streetsidesoftware.code-spell-checker",
+      "rokoroku.vscode-theme-darcula",
+      "msjsdiag.debugger-for-chrome",
+      "dbaeumer.vscode-eslint",
+      "mhutchie.git-graph",
+      "eamodio.gitlens",
+      "k--kato.intellij-idea-keybindings",
+      "shd101wyy.markdown-preview-enhanced",
+      "esbenp.prettier-vscode",
+      "streetsidesoftware.code-spell-checker-russian",
+      "ms-ceintl.vscode-language-pack-ru",
+      "wayou.vscode-todo-highlight",
+      "pflannery.vscode-versionlens",
+      "visualstudioexptteam.vscodeintellicode",
+      "infeng.vscode-react-typescript",
+      "jokerok.importer-monorep-submodules"
+    ]
+  }
+}
