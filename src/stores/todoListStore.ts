@@ -1,5 +1,5 @@
 import { message } from "antd";
-import { action, computed, makeAutoObservable, observable, toJS } from "mobx";
+import { action, computed, makeAutoObservable, observable } from "mobx";
 import { TTodoStatus } from "../components/TodoItem/TodoItem.types";
 
 interface IToDo {
