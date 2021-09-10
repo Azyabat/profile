@@ -1,5 +1,6 @@
 import { Redirect } from "react-router-dom";
 import { Component404 } from "../components/404/Component404";
+import SearchWiki from "../components/SearchWiki/SearchWiki";
 import StartPage from "../components/StartPage/StartPage";
 import TodoList from "../components/TodoList/TodoList";
 import MainContainer from "../containers/MainContainer/MainContainer";
@@ -7,11 +8,17 @@ import StartPageContainer from "../containers/StartPageContainer/StartPageContai
 import {
   key404,
   projectsKey,
+  searchWikiKey,
   startPageContainerKey,
   startPageKey,
   todoKey,
 } from "../utils/keys";
-import { projectsPath, rootPath, toDoPath } from "../utils/path";
+import {
+  projectsPath,
+  rootPath,
+  searchWikiPath,
+  toDoPath,
+} from "../utils/path";
 import { TRouteFunc } from "./routes.types";
 
 const error404 = {
@@ -45,6 +52,13 @@ export const getRoutes: TRouteFunc = () => {
               path: toDoPath,
               exact: true,
               component: TodoList,
+            },
+            {
+              menuTitle: "SearchWiki",
+              key: searchWikiKey,
+              path: searchWikiPath,
+              exact: true,
+              component: SearchWiki,
             },
             {
               key: projectsKey,

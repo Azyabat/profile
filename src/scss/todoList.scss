@@ -3,6 +3,10 @@
   justify-content: space-around;
   padding-top: 15px;
 
+  .container-list {
+    min-width: 480px;
+  }
+
   .caption {
     display: inline-block;
     width: 400px;
@@ -37,7 +41,7 @@
   }
 }
 
-.todo-list__input {
+.search-field {
   min-width: 475px;
   width: 50%;
   margin: 0 auto;

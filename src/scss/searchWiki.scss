@@ -1,0 +1,30 @@
+.search-wiki__results {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15px;
+}
+
+.search-item__wrapper {
+  background-color: aliceblue;
+  min-height: 120px;
+  margin-bottom: 10px;
+  h2 {
+    text-align: center;
+  }
+  p {
+    text-align: justify;
+  }
+  span {
+    position: absolute;
+    right: 15px;
+    :hover {
+      cursor: pointer;
+      fill: yellow;
+    }
+  }
+}
+
+.search-wiki__results-column {
+  width: 480px;
+}

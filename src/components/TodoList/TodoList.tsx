@@ -57,15 +57,15 @@ const TodoList = observer(() => {
         placeholder="Задание"
         enterButton="Добавить"
         size="large"
-        className="todo-list__input"
+        className="search-field"
         onSearch={handleAdd}
       />
       <div className="todo-list" key="container-lists">
-        <div key="container-process-list">
+        <div className="container-list" key="container-process-list">
           <h3>В процессе</h3>
           {renderProcessList()}
         </div>
-        <div key="container-complete-list">
+        <div className="container-list" key="container-complete-list">
           <h3>Готовые</h3>
           {renderCompleteList()}
         </div>

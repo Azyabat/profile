@@ -1,6 +1,6 @@
-import { message } from "antd";
 import { action, computed, makeAutoObservable, observable } from "mobx";
 import { TTodoStatus } from "../components/TodoItem/TodoItem.types";
+import { alertError } from "../utils/utils";
 
 interface IToDo {
   id: string;
@@ -22,14 +22,14 @@ class TodoListStore {
     const isFound = this.todos.findIndex((todo) => todo.text === item.text);
 
     if (item.text.length <= 2) {
-      message.error("Слишком короткое название задания");
+      alertError("Слишком короткое название задания");
       return;
     }
 
     if (isFound === -1) {
       this.todos.push(item);
     } else {
-      message.error("Такое задание уже существует");
+      alertError("Такое задание уже существует");
     }
   }
 
